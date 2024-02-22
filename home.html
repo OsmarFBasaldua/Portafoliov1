@@ -3,29 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css"> <!--Importante para resolver problemas de CSS en los navegadores-->
-    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css\reset.css"> <!--Importante para resolver problemas de CSS en los navegadores-->
+    <link rel="stylesheet" href="\css\flexbox.css">
+	<link rel="stylesheet" href="\css\style.css">
     <title>Developers | Portafolio</title>
 </head>
 <body>
-    <header class="headerPrincipal>
+    <header class="headerPrincipal">
         <div class="container">
-            <img id="logo" src="img\DuckDevelopers2.svg" alt="Logo Developers2">
-            <nav class="nav">
+            <h1 class="headerPrincipal-titulo">
+				<a href="#">Developers - Logo</a>
+            </h1>
+            
+            <nav class="headerPrincipal-nav">
                 <a href="home.html">Home</a>
                 <a href="portafolio.html">Portafolio</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
-        </div>
-    </heade>
+            </div>
+    </header>
 
-    <main>
+    <main class="contenidoPrincipal">
+        <div class="container">
+            <h2 class="subtitulo">Bienvenido></h2>
+            <nav>
+                <ul class="contenidoPrincipal-cursos">
+					<li class="contenidoPrincipal-cursos-link"><a href="#">Java</a></li>
+					<li class="contenidoPrincipal-cursos-link"><a href="#">PHP</a></li>
+					<li class="contenidoPrincipal-cursos-link"><a href="#">Ruby on Rails</a></li>
+					<li class="contenidoPrincipal-cursos-link"><a href="#">.NET</a></li>
+					<li class="contenidoPrincipal-cursos-link"><a href="#">Pascal</a></li>
+				</ul>
+            </nav>
+        </div>
+
+        <section class="videoSobre">
+			<div class="container">
+				<iframe class="videoSobre-video" width="560" height="315" src="https://youtu.be/OuJerKzV5T0?si=Zar6XXzhQ5iUXquJ" frameborder="0" allowfullscreen></iframe>
+				
+				<div class="videoSobre-sobre">
+					<h2 class="videoSobre-sobre-title">Ventajas de Mini Alura</h2>
+					<ul class="videoSobre-sobre-list">
+						<li class="videoSobre-sobre-item">Estudia donde quiera</li>
+						<li class="videoSobre-sobre-item">Nuevos cursos todos los meses</li>
+						<li class="videoSobre-sobre-item">Cursos compatibles con el mercado</li>
+					</ul>
+					<button class="videoSobre-button">Inscrivase ya</button>
+				</div>
+			</div>
+		</section>
 
     </main>
 
-    <footer>
+    <footer class="rodapePrincipal">
+		<div class="container">
 
-    </footer>
+			<section class="rodapePrincipal-navMap">
+				<h3 class="subtitulo">Mapa de cursos</h3>
+				<nav class="rodapePrincipal-navMap-list">
+
+					<h4 class="navmap-list-title navmap-list-title-backend">Lenguajes Backend</h4>
+					<a class="rodapePrincipal-navMap-link" href="#">Java</a>
+					<a class="rodapePrincipal-navMap-link" href="#">PHP</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Pascal</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Scala</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Python</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Java Web</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Assembly</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Lógica de programación</a>
+
+					<h4 class="navmap-list-title navmap-list-title-frontend">Lenguajes Frontend</h4>
+					<a class="rodapePrincipal-navMap-link" href="#">Flexbox</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Desarrollo Web</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Javascript</a>
+					<a class="rodapePrincipal-navMap-link" href="#">AngularJS</a>
+					<a class="rodapePrincipal-navMap-link" href="#">ReactJS</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Polymer</a>
+					
+					<h4 class="navmap-list-title navmap-list-title-framework">Frameworks</h4>
+					<a class="rodapePrincipal-navMap-link" href="#">Ruby on Rails</a>
+					<a class="rodapePrincipal-navMap-link" href="#">VRaptor</a>
+					<a class="rodapePrincipal-navMap-link" href="#">SpringMVC</a>
+					<a class="rodapePrincipal-navMap-link" href="#">NodeJS</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Django</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Bootstrap3</a>
+
+					<h4 class="navmap-list-title navmap-list-title-bancoDeDados">Banco de datos</h4>
+					<a class="rodapePrincipal-navMap-link" href="#">MySQL</a>
+					<a class="rodapePrincipal-navMap-link" href="#">MariaDB</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Postegres</a>
+
+				</nav>
+			</section>
+
+		</div>
+
+		<section class="rodapePrincipal-patrocinadores">
+			<div class="container">
+				<ul class="rodapePrincipal-patrocinadores-list">
+					<li>
+						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-alura" href="#">
+							<img src="img/logos/alura.svg" alt="Logo da Alura">
+						</a>
+					</li>
+					<li>
+						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-caelum" href="#">
+							<img src="img/logos/caelum.svg" alt="Logo da Caelum">
+						</a>
+					</li>
+					<li>
+						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-casaDoCodigo" href="#">
+							<img src="img/logos/cdc.svg" alt="Logo da Casa do Código">
+						</a>
+					</li>
+				</ul>
+				<form class="rodapePrincipal-contatoForm" action="#">
+					<fieldset>
+						<legend class="rodapePrincipal-contatoForm-legend" for="email-contato">Entre en contacto</legend>
+						<div class="rodapePrincipal-contatoForm-fieldset"> 
+							<input class="rodapePrincipal-contatoForm-emailInput" type="email" name="email-contato" id="email-contato">
+							<button class="rodapePrincipal-contatoForm-submit" type="submit">Enviar</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</section>
+	</footer>
     
 </body>
 </html>
