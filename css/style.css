@@ -12,19 +12,16 @@ body {
 	background-color: #FFF;
 	padding: 20px 0;
 }
-
 .headerPrincipal-titulo {
 	font-weight: bold;
 	font-size: 2em;
 	margin-bottom: 20px;
 }
-
 .headerPrincipal-titulo a {
 	text-decoration: none;
 	color: inherit;
 }
-
-.headerPrincipal-nav-link {
+.menu-link {
 	padding: 10px;
 	margin-bottom: 10px;
 	color: #9799A6;
@@ -35,7 +32,6 @@ body {
 
 	border-bottom: 1px solid #9799A6;
 }
-
 .contenidoPrincipal {
 	margin-top: 20px;
 	margin-bottom: 20px;
