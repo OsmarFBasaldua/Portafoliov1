@@ -1,39 +1,36 @@
 body {
-	background-color: #fff;
-	font-family: 'Open Sans',Arial,sans-serif;
+	background: rgb(32, 27, 54);
+	background: -moz-linear-gradient(119deg, rgba(32, 27, 54, 1) 0%, rgba(44, 21, 53, 1) 50%, rgba(53, 18, 53, 1) 100%);
+	background: -webkit-linear-gradient(119deg, rgba(32, 27, 54, 1) 0%, rgba(44, 21, 53, 1) 50%, rgba(53, 18, 53, 1) 100%);
+	background: linear-gradient(119deg, rgba(32, 27, 54, 1) 0%, rgba(44, 21, 53, 1) 50%, rgba(53, 18, 53, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#201b36", endColorstr="#351235", GradientType=1);
+	font-family: "Anonymous Pro", monospace;
+	font-weight: 400;
+	font-style: normal;
 }
 
-.container {
-	width: 94%;
-	margin: 0 auto;
+.header {
+	background: none;
+	padding: 20px;
 }
 
-.headerPrincipal {
-	background-color: #FFF;
-	padding: 20px 0;
+.div1 h1 {
+	color: #fff;
+	text-decoration: none;
 }
-.headerPrincipal-titulo {
+
+.logoName {
 	font-weight: bold;
 	font-size: 2em;
 	margin-bottom: 20px;
 }
-.headerPrincipal-titulo a {
-	text-decoration: none;
-	color: inherit;
-}
-.menu-link {
-	padding: 10px;
-	margin-bottom: 10px;
-	color: #9799A6;
-	background-color: #FFF;
-	text-decoration: none;
-	transition: .5s;
-	display: block;
 
-	border-bottom: 1px solid #9799A6;
+.logoName .a {
+	text-decoration: none;
+	color: #fff;
 }
-.contenidoPrincipal {
-	margin-top: 20px;
-	margin-bottom: 20px;
+.div2{
+	padding: 20px;
+	color: #fff;
+	font-size: 60px;
 }
-
