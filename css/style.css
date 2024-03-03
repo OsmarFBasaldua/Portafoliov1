@@ -5,28 +5,108 @@ body {
 	background: linear-gradient(119deg, rgba(32, 27, 54, 1) 0%, rgba(44, 21, 53, 1) 50%, rgba(53, 18, 53, 1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#201b36", endColorstr="#351235", GradientType=1);
 	font-family: "Anonymous Pro", monospace;
-	font-weight: 400;
-	font-style: normal;
 }
 
-.header {
-	background: none;
-	padding: 20px;
+.container {
+	width: 94%;
+	margin: 20px;
 }
 
-.div1 h1 {
+.container h1 {
 	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
+}
+
+.headerPrincipal {
+	background: none;
+	padding: 20px 0;
+}
+
+.headerPrincipal-titulo {
 	font-size: 2em;
 	margin-bottom: 10px;
 }
-.logoName .a {
+
+.headerPrincipal-titulo a {
 	text-decoration: none;
 	color: #fff;
+	animation-duration: 2s;
 }
-.div2{
-	padding: 20px;
+
+/*animation titulo*/
+
+.headerPrincipal-titulo {
+	overflow: hidden;
+	/* Ocultar texto adicional que aún no ha aparecido */
+	position: relative;
+	/* Para posicionar el cursor relativo al texto */
+	animation: appear 3s forwards;
+	/* Nombre de la animación y duración */
+}
+
+.headerPrincipal-titulo::after {
+	content: '|';
+	/* Representa el cursor */
+	position: absolute;
+	/* Para posicionar el cursor en relación al texto */
+	top: 0;
+	right: 0;
+	animation: blink 0.5s infinite alternate;
+	/* Animación de intermitencia */
+}
+
+@keyframes appear {
+	0% {
+		width: 0;
+		/* Inicia con cero anchura */
+	}
+
+	100% {
+		width: 205px;
+		/* Llega al ancho completo del texto */
+	}
+}
+
+@keyframes blink {
+
+	0%,
+	100% {
+		opacity: 0;
+		/* El cursor es invisible en los extremos */
+	}
+
+	50% {
+		opacity: 1;
+		/* El cursor es visible en el medio */
+	}
+}
+
+.headerPrincipal-titulo::after {
+	animation: blink 0.5s infinite alternate, stopBlink linear 2s;
+	/* Agregar una nueva animación para detener el cursor */
+}
+
+@keyframes stopBlink {
+	to {
+		visibility: hidden;
+		/* Hacer que el cursor sea invisible al final de la animación */
+	}
+}
+
+.main-container {
+	background-color: #000;
+	margin: 20px;
+	width: 100%;
+	height: 100vh;
+	/* Ajusta la altura según sea necesario */
+	display: flex;
+	justify-content: left;
+	/* Centra horizontalmente */
+	align-items: center;
+	/* Centra verticalmente */
+}
+
+.main-container h1{
 	color: #fff;
-	font-size: 60px;
-}
+	text-align: center; /* Centra horizontalmente */
+	line-height: 1.5; /* Ajusta el espaciado vertical según sea necesario */
+  }

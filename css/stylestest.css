@@ -1,0 +1,42 @@
+.headerPrincipal-titulo{
+    overflow: hidden; /* Ocultar texto adicional que aún no ha aparecido */
+    position: relative; /* Para posicionar el cursor relativo al texto */
+    animation: appear 3s forwards; /* Nombre de la animación y duración */
+  }
+  
+  .headerPrincipal-titulo::after {
+    content: '|'; /* Representa el cursor */
+    position: absolute; /* Para posicionar el cursor en relación al texto */
+    top: 0;
+    right: 0;
+    animation: blink 0.5s infinite alternate; /* Animación de intermitencia */
+  }
+  
+  @keyframes appear {
+    0% {
+      width: 0; /* Inicia con cero anchura */
+    }
+    100% {
+      width: 20%; /* Llega al ancho completo del texto */
+    }
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0; /* El cursor es invisible en los extremos */
+    }
+    50% {
+      opacity: 1; /* El cursor es visible en el medio */
+    }
+  }
+  
+  .headerPrincipal-titulo::after {
+    animation: blink 0.5s infinite alternate, stopBlink linear 2s; /* Agregar una nueva animación para detener el cursor */
+  }
+  
+  @keyframes stopBlink {
+    to {
+      visibility: hidden; /* Hacer que el cursor sea invisible al final de la animación */
+    }
+  }
+  
