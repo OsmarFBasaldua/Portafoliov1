@@ -19,6 +19,7 @@ body {
 .headerPrincipal {
 	background: none;
 	padding: 20px 0;
+	justify-content: space-between;
 }
 
 .headerPrincipal-titulo {
@@ -93,8 +94,6 @@ body {
 }
 
 .main-container {
-	background-color: #000;
-	margin: 20px;
 	width: 100%;
 	height: 100vh;
 	/* Ajusta la altura según sea necesario */
@@ -103,10 +102,12 @@ body {
 	/* Centra horizontalmente */
 	align-items: center;
 	/* Centra verticalmente */
+
 }
 
 .main-container h1{
 	color: #fff;
 	text-align: center; /* Centra horizontalmente */
 	line-height: 1.5; /* Ajusta el espaciado vertical según sea necesario */
+	margin: 20px;
   }
